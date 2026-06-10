@@ -1,49 +1,43 @@
-# Deploy Files to Google Cloud Storage
-
 name: Deploy Files to Google Cloud Storage
 
 on:
-push:
-branches:
-- main
+  push:
+    branches:
+      - main
 
 jobs:
-deploy:
-runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
-```
-steps:
-  # Step 1: Checkout code
-  - name: Checkout Repository
-    uses: actions/checkout@v4
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-  # Step 2: Authenticate with GCP
-  - name: Authenticate to Google Cloud
-    uses: google-github-actions/auth@v2
-    with:
-      credentials_json: '${{ secrets.GCS_SA_KEY }}'
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCS_SA_KEY }}
 
-  # Step 3: Setup gcloud SDK
-  - name: Install Google Cloud SDK
-    uses: google-github-actions/setup-gcloud@v2
+      - name: Install Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
 
-  # Step 4: Verify login
-  - name: Verify Login
-    run: gcloud auth list
+      - name: Verify Login
+        run: gcloud auth list
 
-  # Step 5: Install dependencies & build project
-  - name: Build Project
-    run: |
-      npm install
-      npm run build
+      - name: Build Project
+        run: |
+          npm install
+          npm run build
 
-  # Step 6: Upload only dist contents to GCS
-  - name: Upload Files to Cloud Storage
-    run: |
-      gsutil -m rm -r gs://aaryan-portfolio-499016/**
-      gsutil -m cp -r dist/* gs://aaryan-portfolio-499016
+      - name: Debug dist folder
+        run: |
+          ls
+          ls dist
 
-  # Step 7: Done
-  - name: Deployment Complete
-    run: echo "Files successfully uploaded to Google Cloud Storage"
-```
+      - name: Upload Files to Cloud Storage
+        run: |
+          gsutil -m rm -r gs://aaryan-portfolio-499016/**
+          gsutil -m cp -r dist/* gs://aaryan-portfolio-499016
+
+      - name: Deployment Complete
+        run: echo "Files successfully uploaded"
