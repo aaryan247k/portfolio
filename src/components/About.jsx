@@ -59,7 +59,7 @@ function About() {
                             {/* Image Container */}
                             <div className="absolute inset-0 bg-zinc-800 rounded-2xl overflow-hidden shadow-2xl z-10">
                                 <img
-                                    src="/profile_pic.jpeg"
+                                    src="./profile_pic.jpeg"
                                     alt="Aaryan's profile photo"
                                     className="w-full h-full object-cover"
                                 />
