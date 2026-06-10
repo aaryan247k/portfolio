@@ -36,8 +36,8 @@ jobs:
 
       - name: Upload Files to Cloud Storage
         run: |
-          gsutil -m rm -r gs://aaryan-portfolio-499016/**
-          gsutil -m cp -r dist/* gs://aaryan-portfolio-499016
+          gsutil -m rm -r gs://aaryan-portfolio/**
+          gsutil -m cp -r dist/* gs://aaryan-portfolio
 
       - name: Deployment Complete
         run: echo "Files successfully uploaded"
