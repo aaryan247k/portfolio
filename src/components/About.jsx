@@ -29,7 +29,7 @@ function About() {
                         className="md:w-1/2 text-slate-300 text-lg leading-relaxed space-y-6"
                     >
                         <p>
-                            Hello! My name is John and I enjoy creating things that live on the internet.
+                            Hello! My name is Aaryan and I enjoy creating things that live on the internet.
                             My interest in web development started back in 2018 when I decided to try
                             building custom Tumblr themes — turns out hacking together HTML & CSS taught
                             me a lot about design and structure!
@@ -58,9 +58,11 @@ function About() {
                             <div className="absolute inset-0 border-2 border-indigo-400 rounded-2xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
                             {/* Image Container */}
                             <div className="absolute inset-0 bg-zinc-800 rounded-2xl overflow-hidden shadow-2xl z-10">
-                                <div className="w-full h-full flex items-center justify-center bg-zinc-800 text-zinc-600">
-                                    <span className="text-5xl">[ Image Placeholder ]</span>
-                                </div>
+                                <img
+                                    src="/profile_pic.jpeg"
+                                    alt="Aaryan's profile photo"
+                                    className="w-full h-full object-cover"
+                                />
                                 {/* Overlay on hover */}
                                 <div className="absolute inset-0 bg-indigo-500/20 mix-blend-multiply opacity-100 group-hover:opacity-0 transition-opacity duration-300 z-20"></div>
                             </div>

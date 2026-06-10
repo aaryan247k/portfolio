@@ -7,6 +7,7 @@ const projects = [
         title: 'E-Commerce Platform',
         description: 'A full-featured e-commerce platform built with React, Node.js, and MongoDB. Features payment integration, user authentication, and admin dashboard.',
         tags: ['React', 'Node.js', 'MongoDB', 'Tailwind'],
+        image: '/ecommerce_project.png',
         github: 'https://github.com',
         live: 'https://example.com',
     },
@@ -14,6 +15,7 @@ const projects = [
         title: 'Task Management App',
         description: 'A beautiful and responsive Kanban-style task management application. Allows users to drag and drop tasks with real-time updates.',
         tags: ['React', 'Firebase', 'Framer Motion'],
+        image: '/taskmanager_project.png',
         github: 'https://github.com',
         live: 'https://example.com',
     },
@@ -21,6 +23,7 @@ const projects = [
         title: 'Weather Dashboard',
         description: 'A weather forecasting application that provides real-time data and a 7-day forecast using the OpenWeather API.',
         tags: ['JavaScript', 'HTML/CSS', 'REST API'],
+        image: '/weather_project.png',
         github: 'https://github.com',
         live: 'https://example.com',
     },
@@ -56,8 +59,8 @@ function Projects() {
                             className="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:-translate-y-2 transition-transform duration-300 group shadow-lg flex flex-col h-full"
                         >
                             {/* Image Placeholder */}
-                            <div className="h-48 bg-zinc-800 relative overflow-hidden flex items-center justify-center">
-                                <span className="text-zinc-600 font-medium tracking-widest uppercase">Project Image</span>
+                            <div className="h-48 bg-zinc-800 relative overflow-hidden">
+                                <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
                                 <div className="absolute inset-0 bg-indigo-500/20 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </div>
 

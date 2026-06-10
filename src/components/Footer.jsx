@@ -21,7 +21,7 @@ function Footer() {
                 </button>
 
                 <p className="text-slate-500 text-sm mt-4 font-mono">
-                    Designed & Built by John Doe
+                    Designed & Built by Aaryan Khamkar
                 </p>
                 <p className="text-zinc-600 text-xs mt-2 font-mono">
                     © {new Date().getFullYear()} All rights reserved.
