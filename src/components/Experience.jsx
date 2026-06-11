@@ -181,7 +181,7 @@ function Experience() {
                         </motion.a>
 
                         {/* Subtle hint */}
-                        <p className="text-zinc-700 text-xs mt-6 tracking-wide">
+                        <p style={{ color:"red" }} className="text-zinc-700 text-xs mt-6 tracking-wide">
                             Spoiler: I'm actually pretty good at this stuff
                         </p>
                     </div>

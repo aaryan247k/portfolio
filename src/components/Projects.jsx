@@ -97,7 +97,7 @@ function Projects() {
 
                 <div className="mt-16 text-center">
                     <a
-                        href="https://github.com"
+                        href="https://github.com/aaryan247k"
                         target="_blank"
                         rel="noreferrer"
                         className="px-8 py-4 bg-transparent border border-zinc-700 hover:border-indigo-500 hover:bg-zinc-800 text-white font-medium rounded-lg transition-colors inline-block"

@@ -32,22 +32,22 @@ function Contact() {
                     </p>
 
                     <a
-                        href="mailto:hello@example.com"
+                        href="mailto:aaryankhamkar47@gmail.com"
                         className="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors inline-block text-lg shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:shadow-[0_0_30px_rgba(79,70,229,0.5)] transform hover:-translate-y-1 duration-300"
                     >
                         Say Hello
                     </a>
 
                     <div className="mt-16 pt-8 border-t border-zinc-800/50 flex justify-center gap-8">
-                        <a href="https://github.com" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-indigo-400 transition-colors hover:-translate-y-1 duration-300">
+                        <a href="https://github.com/aaryan247k" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-indigo-400 transition-colors hover:-translate-y-1 duration-300">
                             <span className="sr-only">GitHub</span>
                             <FiGithub size={28} />
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors hover:-translate-y-1 duration-300">
+                        <a href="https://www.linkedin.com/in/aaryankhamkar" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors hover:-translate-y-1 duration-300">
                             <span className="sr-only">LinkedIn</span>
                             <FiLinkedin size={28} />
                         </a>
-                        <a href="mailto:hello@example.com" className="text-slate-400 hover:text-indigo-400 transition-colors hover:-translate-y-1 duration-300">
+                        <a href="mailto:aaryankhamkar47@gmail.com" className="text-slate-400 hover:text-indigo-400 transition-colors hover:-translate-y-1 duration-300">
                             <span className="sr-only">Email</span>
                             <FiMail size={28} />
                         </a>
